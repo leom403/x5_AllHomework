@@ -13,12 +13,12 @@ public class Storage {
 
     public void chooseStorage() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("\tКакое хранилище информации? 1-HDD, 2-SSD");
+        System.out.print("\tКакое хранилище информации? Homework6.1-HDD, 2-SSD");
         String choose = scanner.nextLine();
         MakeInsert make = null;
 
         switch (choose) {
-            case "1":
+            case "Homework6/1":
                 make = new MakeInsertHDD();
                 break;
             case "2":

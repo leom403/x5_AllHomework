@@ -16,12 +16,12 @@ public class Processor {
 
     public void chooseProcessor() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("\tКакой процессор ставим? 1-Inter, 2-AMD");
+        System.out.print("\tКакой процессор ставим? Homework6.1-Inter, 2-AMD");
         String choose = scanner.nextLine();
         MakeInsert make = null;
 
         switch (choose) {
-            case "1":
+            case "Homework6/1":
                 make = new MakeInsertIntel();
                 break;
             case "2":

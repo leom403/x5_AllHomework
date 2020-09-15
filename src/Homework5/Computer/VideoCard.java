@@ -14,12 +14,12 @@ public class VideoCard {
 
     public void chooseVideo() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Какую карту ставим? 1-Nvidia, 2-Radeon");
+        System.out.print("Какую карту ставим? Homework6.1-Nvidia, 2-Radeon");
         String choose = scanner.nextLine();
         MakeInsert make = null;
 
         switch (choose) {
-            case "1":
+            case "Homework6/1":
                 make = new MakeInsertNvidia();
                 break;
             case "2":

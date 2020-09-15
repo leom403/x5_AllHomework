@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Homework2_part2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();              // не мог вывести целое число в вывод, решил преобразовывать строку в число. Потом додумался, что можно было, например, ввести 3 переменную и выводить 1, а 3 приравнивать в While
+        String s = scanner.nextLine();              // не мог вывести целое число в вывод, решил преобразовывать строку в число. Потом додумался, что можно было, например, ввести 3 переменную и выводить Homework6.1, а 3 приравнивать в While
         int a = Integer.parseInt(s);
 
         int b = 0;

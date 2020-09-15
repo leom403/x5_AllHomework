@@ -14,12 +14,12 @@ public class Ram {
 
     public void chooseRam() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Сколько нужно ОЗУ? 1-8 GB, 2-16 GB");
+        System.out.print("Сколько нужно ОЗУ? Homework6.1-8 GB, 2-16 GB");
         String choose = scanner.nextLine();
         MakeInsert make = null;
 
         switch (choose) {
-            case "1":
+            case "Homework6/1":
                 make = new MakeInsertRam8();
                 break;
             case "2":

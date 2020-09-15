@@ -9,7 +9,7 @@ public class Phone {
     //контруктор 3 параметра
     public Phone(String number, String model, double weight) {
         //вызов конструктора с 2 параметрами из 3
-        this(number, model);                 // должен стоять всегда на 1 месте.
+        this(number, model);                 // должен стоять всегда на Homework6.1 месте.
         //конец вызова
         this.number = number;
         this.model = model;

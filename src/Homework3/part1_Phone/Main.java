@@ -2,7 +2,7 @@ package Homework3.part1_Phone;
 
 public class Main {
     public static void main(String[] args) {
-//три экземпляра телефона в классе Main
+//три экземпляра телефона в классе MyCollectionArrayList
 //вывести 3 телефона в консоли
         Phone phone1 = new Phone("+79999999999", "Panasonic", 12.2);
         System.out.println("Телефон один: " + "\t" + phone1.getNumber() + " - " + phone1.getModel() + " - " + phone1.getWeight());
