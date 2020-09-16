@@ -36,7 +36,7 @@ public class Phone {
 
     //перегруженный метод
     public void receiveCalls(String name, String number) {
-        System.out.println("Вам звонить " + name + " с телефона: " + getNumber());
+        System.out.println("Вам звонит " + name + " с телефона: " + getNumber());
     }
 
     //метод возвращает номер звонящего в перегруженный метод
