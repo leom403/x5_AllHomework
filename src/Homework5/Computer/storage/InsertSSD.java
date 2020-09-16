@@ -1,4 +1,7 @@
-package Homework5.Computer;
+package Homework5.Computer.storage;
+
+import Homework5.Computer.Insert;
+import Homework5.Computer.Storage;
 
 public class InsertSSD extends Storage implements Insert {
 

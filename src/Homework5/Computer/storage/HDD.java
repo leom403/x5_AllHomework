@@ -1,4 +1,6 @@
-package Homework5.Computer;
+package Homework5.Computer.storage;
+
+import Homework5.Computer.PCassembly;
 
 public class HDD extends PCassembly {
     private static String manufacturer = "Unknown HDD";
@@ -6,9 +8,9 @@ public class HDD extends PCassembly {
     private static float formFactor = 3.5f;
 
     public HDD (String manufacturer, int memory, float formFactor) {
-        this.manufacturer = manufacturer;
-        this.memory = memory;
-        this.formFactor = formFactor;
+        HDD.manufacturer = manufacturer;
+        HDD.memory = memory;
+        HDD.formFactor = formFactor;
     }
 
     public  static String manufacturer() {

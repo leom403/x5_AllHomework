@@ -1,6 +1,6 @@
-package Homework5.Computer;
+package Homework5.Computer.processor;
 
-import java.util.Spliterator;
+import Homework5.Computer.Processor;
 
 public class Intel extends Processor {
     private static String name = "Core i5";

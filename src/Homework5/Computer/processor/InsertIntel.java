@@ -1,4 +1,7 @@
-package Homework5.Computer;
+package Homework5.Computer.processor;
+
+import Homework5.Computer.Insert;
+import Homework5.Computer.Processor;
 
 public class InsertIntel extends Processor implements Insert {
     @Override

@@ -1,5 +1,8 @@
 package Homework5.Computer;
 
+import Homework5.Computer.video.MakeInsertNvidia;
+import Homework5.Computer.video.MakeInsertRadeon;
+
 import java.util.Scanner;
 
 public class VideoCard {
@@ -19,7 +22,7 @@ public class VideoCard {
         MakeInsert make = null;
 
         switch (choose) {
-            case "Homework6/1":
+            case "1":
                 make = new MakeInsertNvidia();
                 break;
             case "2":

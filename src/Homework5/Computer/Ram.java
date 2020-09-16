@@ -1,5 +1,7 @@
 package Homework5.Computer;
 
+import Homework5.Computer.ram.*;
+
 import java.util.Scanner;
 
 public class Ram {
@@ -19,7 +21,7 @@ public class Ram {
         MakeInsert make = null;
 
         switch (choose) {
-            case "Homework6/1":
+            case "1":
                 make = new MakeInsertRam8();
                 break;
             case "2":

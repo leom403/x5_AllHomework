@@ -30,7 +30,7 @@ class AnimalArrayList {
         System.out.println("Убираем кокос: " + animalList);
 //Получение по индексу
         System.out.println("Кто царь зверей: " + animalList.get(1));
-//Очистить коллекуию
+//Очистить коллекию
         animalList.clear();
         System.out.println(animalList);
     }

@@ -1,4 +1,6 @@
-package Homework5.Computer;
+package Homework5.Computer.video;
+
+import Homework5.Computer.PCassembly;
 
 public class NVidia extends PCassembly {
     private static String manufacturer = "NVidia";
@@ -6,9 +8,9 @@ public class NVidia extends PCassembly {
     private static int memory = 6144;
 
     public NVidia (String manufacturer, String memoryType, int memory) {
-        this.manufacturer = manufacturer;
-        this.memoryType = memoryType;
-        this.memory = memory;
+        NVidia.manufacturer = manufacturer;
+        NVidia.memoryType = memoryType;
+        NVidia.memory = memory;
 
     }
 

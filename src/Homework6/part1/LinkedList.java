@@ -33,7 +33,7 @@ class FruitLinkedList {
         list.remove("Coconut");
         System.out.println("Убираем кокос: " + list);
 //Получение по индексу
-        System.out.println("Зеленый и волосатый фрукт " + list.get(1));
+        System.out.println("Зеленый и волосатый фрукт: " + list.get(1));
 //Очистить коллекуию
         list.clear();
         System.out.println(list);

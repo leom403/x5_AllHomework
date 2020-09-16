@@ -1,6 +1,8 @@
 package Homework5.Computer;
 
+import Homework5.Computer.processor.*;
 import java.util.Scanner;
+
 
 public class Processor {
     private String name;
@@ -21,7 +23,7 @@ public class Processor {
         MakeInsert make = null;
 
         switch (choose) {
-            case "Homework6/1":
+            case "1":
                 make = new MakeInsertIntel();
                 break;
             case "2":

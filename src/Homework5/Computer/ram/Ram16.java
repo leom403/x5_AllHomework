@@ -1,6 +1,8 @@
-package Homework5.Computer;
+package Homework5.Computer.ram;
 
-public class Ram16 extends PCassembly{
+import Homework5.Computer.PCassembly;
+
+public class Ram16 extends PCassembly {
     private static String manufacturer = "Corsair";
     private static int memory = 16;
     private static int clockFrequence = 3200;

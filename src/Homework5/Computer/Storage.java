@@ -1,5 +1,8 @@
 package Homework5.Computer;
 
+import Homework5.Computer.storage.MakeInsertHDD;
+import Homework5.Computer.storage.MakeInsertSSD;
+
 import java.util.Scanner;
 
 public class Storage {
@@ -18,7 +21,7 @@ public class Storage {
         MakeInsert make = null;
 
         switch (choose) {
-            case "Homework6/1":
+            case "1":
                 make = new MakeInsertHDD();
                 break;
             case "2":

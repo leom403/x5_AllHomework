@@ -1,4 +1,6 @@
-package Homework5.Computer;
+package Homework5.Computer.video;
+
+import Homework5.Computer.PCassembly;
 
 public class Radeon extends PCassembly {
     private static String manufacturer = "Radeon";
@@ -6,9 +8,9 @@ public class Radeon extends PCassembly {
     private static int memory = 4096;
 
     public Radeon(String manufacturer, String memoryType, int memory, String coolingStrategy) {
-        this.manufacturer = manufacturer;
-        this.memoryType = memoryType;
-        this.memory = memory;
+        Radeon.manufacturer = manufacturer;
+        Radeon.memoryType = memoryType;
+        Radeon.memory = memory;
     }
 
     public static String memoryType() {

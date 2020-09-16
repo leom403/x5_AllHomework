@@ -1,6 +1,8 @@
-package Homework5.Computer;
+package Homework5.Computer.ram;
 
-public class Ram8 extends PCassembly{
+import Homework5.Computer.PCassembly;
+
+public class Ram8 extends PCassembly {
     private static String manufacturer = "Silicon Power";
     private static int memory = 4;
     private static int clockFrequence = 1337;

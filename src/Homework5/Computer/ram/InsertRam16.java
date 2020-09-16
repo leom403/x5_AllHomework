@@ -1,4 +1,7 @@
-package Homework5.Computer;
+package Homework5.Computer.ram;
+
+import Homework5.Computer.Insert;
+import Homework5.Computer.VideoCard;
 
 public class InsertRam16 extends VideoCard implements Insert {
 

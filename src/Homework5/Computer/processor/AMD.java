@@ -1,6 +1,8 @@
-package Homework5.Computer;
+package Homework5.Computer.processor;
 
-public class AMD extends Processor{
+import Homework5.Computer.Processor;
+
+public class AMD extends Processor {
     private static String name = "AMD Phenom X4";
     private static String manufacturer = "AMD";
     private static float clockFrequence = 2.1f;
