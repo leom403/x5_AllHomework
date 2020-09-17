@@ -7,9 +7,6 @@ public class Animal {
     private String food;                       //сколько кушает еды
     private String location;                   //где живет
 
-    public Animal() {
-
-    }
 
     public Animal(String food, String location) {
         this.food = food;

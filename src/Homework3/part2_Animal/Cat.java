@@ -4,17 +4,9 @@ public class Cat extends Animal {
     private String say = "Meow";
     private String size = "Small";
     private boolean makePurrr;
-    private String food = "Mouse";
-    private String location = "Home";
-
-    public Cat() {
-
-    }
 
     public Cat(String say, String size, boolean makePurrr, String food, String location) {
-        this.food = food;
-        this.location = location;
-        this.makePurrr = makePurrr;
+        super(food, location);
         this.say = say;
         this.size = size;
     }
@@ -41,18 +33,6 @@ public class Cat extends Animal {
     public void makeNoise() {
         System.out.println("Бесшумное, словно тень");
 
-    }
-
-    @Override
-    public String getFood() {
-
-        return food;
-    }
-
-    @Override
-    public String getLocation() {
-
-        return location;
     }
 
 

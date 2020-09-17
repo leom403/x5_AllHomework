@@ -5,19 +5,13 @@ public class Horse extends Animal {
     private String size = "Tall";
     private int numberOfHooves = 4;
     private boolean canBeMount;
-    private String food = "Oats";
-    private String location = "Prairie";
 
-    public Horse() {
-
-    }
 
     public Horse(String say, String size, int NumberOfHooves, boolean canBeMount, String food, String location) {
+        super (food, location);                         //вызываем параметры из родителя
         this.say = say;
         this.size = size;
-        this.food = food;
-        this.location = location;
-        this.numberOfHooves = NumberOfHooves;
+        this.numberOfHooves = numberOfHooves;
         this.canBeMount = canBeMount;
     }
 
@@ -39,12 +33,6 @@ public class Horse extends Animal {
 
     }
 
-    @Override
-    public String getFood() {
-
-        return food;
-    }
-
     public String getSay() {
         return say;
     }
@@ -59,10 +47,5 @@ public class Horse extends Animal {
 
     public boolean isCanBeMount() {
         return true;
-    }
-
-    @Override
-    public String getLocation() {
-        return location;
     }
 }

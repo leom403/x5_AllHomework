@@ -14,10 +14,6 @@ public class Student {
         this.averageMark = averageMark;
     }
 
-    public Student() {
-
-    }
-
     public String getFirstName() {
         return firstName;
     }
