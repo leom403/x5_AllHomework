@@ -1,8 +1,9 @@
 package Homework6.part2;
 
-public class Apple extends Fruit{
-    public Apple(int c, float u){
-        this.count = c;
-        this.unitWeight = u;
+public class Apple extends Fruit {
+
+    @Override
+    public float getWeight() {
+        return 1.0f;
     }
 }

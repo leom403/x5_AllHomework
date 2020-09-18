@@ -1,7 +1,6 @@
 package Homework6.part1;
 
-import java.util.List;
-import java.util.LinkedList;
+import java.util.*;
 
 class FruitLinkedList {
     public static void main(String[] args) {

@@ -1,14 +1,6 @@
 package Homework6.part2;
 
-public class Fruit {
-    protected int count;
-    protected float unitWeight;
+public abstract class Fruit {
 
-    public int getCount() {
-        return count;
-    }
-
-    public float getUnitWeight() {
-        return unitWeight;
-    }
+    public abstract float getWeight();
 }
