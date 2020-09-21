@@ -9,10 +9,13 @@ public class Aspirant extends Student {
 
     @Override                                       // я не забыл про него, я его переопределил
     public int getScholarship() {
-        if (getAverageMark() == 5) {
-            return setScholarship(200);
+        double maxAvarageMerk = 5;
+        int maxScholarship = 200;
+        int minScholarship = 180;
+        if (getAverageMark() == maxAvarageMerk) {
+            return maxScholarship;
         } else {
-            return setScholarship(180);
+            return minScholarship;
         }
     }
 

@@ -30,16 +30,19 @@ public class Student {
         return averageMark;
     }
 
-    public int setScholarship(int scholarship) {
+    public int getScholarship(int scholarship) {
         return scholarship;
     }
 
 
     public int getScholarship() {
-        if (averageMark == 5) {
-            return scholarship = 100;
+        double maxAvarageMerk = 5;
+        int maxScholarship = 100;
+        int minScholarship = 80;
+        if (averageMark == maxAvarageMerk) {
+            return scholarship = maxScholarship;
         } else {
-            return scholarship = 80;
+            return scholarship = minScholarship;
         }
     }
 }
