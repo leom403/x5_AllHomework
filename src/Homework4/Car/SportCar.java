@@ -5,12 +5,12 @@ public class SportCar extends Car {
 
 
     @Override
-    void start() {
+    public void start() {
         System.out.println("Спорткар поехал");
     }
 
     @Override
-    void stop() {
+    public void stop() {
         System.out.println("Спорткар остановился");
     }
 

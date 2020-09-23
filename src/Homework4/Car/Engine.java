@@ -4,10 +4,6 @@ public class Engine {
     private int power;                    //будет в лошадях
     private String manufacturer;
 
-    public Engine() {
-
-    }
-
     public Engine(String manufacturer, int power) {
         this.manufacturer = manufacturer;
         this.power = power;

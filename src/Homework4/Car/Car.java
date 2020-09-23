@@ -6,25 +6,21 @@ public abstract class Car {
     private String carBrand;
     private String carClass;
     private float weight;
-    private String  motor;
+    private String motor;
 
-    abstract void start();
+    public abstract void start();
 
-    abstract void stop();
+    public abstract void stop();
 
-    static void turnLeft() {
+    public void turnLeft() {
         System.out.println("Поворот налево");
     }
 
-    static void turnRight() {
+    public void turnRight() {
         System.out.println("Повторот направо");
     }
 
     public abstract void printInfo();
-
-    public Car() {
-
-    }
 
     public Car(String carBrand, String carClass, float weight, Engine motor) {
         this.carBrand = carBrand;
@@ -45,7 +41,7 @@ public abstract class Car {
         return weight;
     }
 
-    public String  getMotor() {
+    public String getMotor() {
         return motor;
     }
 }
