@@ -25,7 +25,7 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Client :: " + "\nid: " + id + ", holder: " + holder + "; amount: " + amount + " |";
+        return "Client :: " + "\nid: " + id + ", holder:" + holder + "; amount: " + amount + " |";
     }
 
 }
