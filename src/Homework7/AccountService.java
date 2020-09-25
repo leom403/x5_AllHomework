@@ -4,19 +4,63 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class AccountService {
-    public AccountService() {
-            try (BufferedReader reader = new BufferedReader(new FileReader("Accounts.txt"))) {
-        String str;
-        while ((str = reader.readLine()) != null) {
-            System.out.println(str);
-            String[] arr = str.split("\\|");
-            new Account (String.valueOf(arr[0]), arr[1], Double.parseDouble(arr[2]));
+public class AccountService  {
+    public static Account read() throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader("Accounts.txt"))) {
+            String str;
+            Scanner scanner = new Scanner(System.in);
+            String input = "2248";
+            while ((str = reader.readLine()) != null) {
+                System.out.println(str);
+                String[] arr = str.split("\\|");
+                if (arr[0].contains(input)) {
+                    System.out.println(str);
+                }
+                    return new Account(String.valueOf(arr[0]), arr[1], Double.parseDouble(arr[2]));
+
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            throw ex;
         }
-    } catch (IOException ex) {
-        ex.printStackTrace();
+        return null;
     }
-    }
+
+//    public static Account read() throws IOException {
+//        try (BufferedReader reader = new BufferedReader(new FileReader("Accounts.txt"))) {
+//            String str;
+//            Scanner scanner = new Scanner(System.in);
+//            String input = "2248";
+//            while ((str = reader.readLine()) != null) {
+//                System.out.println(str);
+//                String[] arr = str.split("\\|");
+//                if (input.equals(arr[0])) {
+//                    System.out.println(str);
+//                }
+//                return new Account(String.valueOf(arr[0]), arr[1], Double.parseDouble(arr[2]));
+//
+//            }
+//        } catch (IOException ex) {
+//            ex.printStackTrace();
+//            throw ex;
+//        }
+//        return null;
+//    }
+
+
+
+//    public AccountService() {
+//            try (BufferedReader reader = new BufferedReader(new FileReader("Accounts.txt"))) {
+//        String str;
+//        while ((str = reader.readLine()) != null) {
+//            System.out.println(str);
+//            String[] arr = str.split("\\|");
+//            new Account (String.valueOf(arr[0]), arr[1], Double.parseDouble(arr[2]));
+//        }
+//    } catch (IOException ex) {
+//        ex.printStackTrace();
+//    }
+//    }
 
 
 //    void withdraw(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException {

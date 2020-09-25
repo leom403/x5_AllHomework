@@ -13,6 +13,6 @@ public class Bank {
                             "\t-transfer [from] [to] [amount] –перевести сумму с одного счета на другой");
 
         CheckFile checkFile = new CheckFile();
-        System.out.println(new AccountService()); //проверка чтения из файла.
+        System.out.println(AccountService.read()); //проверка чтения из файла.
     }
 }
