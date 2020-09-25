@@ -1,11 +1,18 @@
 package Homework7;
 
-import javax.sound.midi.Soundbank;
 import java.io.*;
-import java.util.Scanner;
+
+import Homework7.AccountService;
 
 public class Bank {
     public static void main(String[] args) throws IOException {
+        System.out.println("Добро пожаловать в нашу систему. Что требуется сделать?");
+        System.out.println("\t-balance [id] –вывеси информацию о счёте\n" +
+                            "\t-withdraw [id] [amount] –снять указанную сумму\n" +
+                            "\t-deposite [id] [amount] –внести на счет указанную сумму\n" +
+                            "\t-transfer [from] [to] [amount] –перевести сумму с одного счета на другой");
+
         CheckFile checkFile = new CheckFile();
+        System.out.println(new AccountService()); //проверка чтения из файла.
     }
 }
