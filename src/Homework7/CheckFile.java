@@ -2,6 +2,7 @@ package Homework7;
 
 import java.io.*;
 
+
 public class CheckFile {
     private static File file = new File("Accounts.txt");
 
@@ -11,6 +12,26 @@ public class CheckFile {
         }
     }
 
+    public Account get(int id) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("Accounts.txt"))) {
+            String str;
+            String[] accountDevide;
+            Account account = null;
+            while ((str = reader.readLine()) != null) {
+                if (str.startsWith(String.valueOf(id))) {
+                    break;
+                }
+            }
+            if (str != null) {
+                accountDevide = str.split("\\|");
+                account = new Account(String.valueOf(accountDevide[0]), accountDevide[1], Double.parseDouble(accountDevide[2]));
+            }
+            return account;
+        } catch (IOException e) {
+            System.out.println(e.toString());
+        }
+        return null;
+    }
 
     public void WriteFile() {
         write(new AccountGenerator());

@@ -23,6 +23,10 @@ public class Account {
         return amount;
     }
 
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
     @Override
     public String toString() {
         return "Client :: " + "\nid: " + id + ", holder:" + holder + "; amount: " + amount + " |";
