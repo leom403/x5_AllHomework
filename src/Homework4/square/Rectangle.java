@@ -15,7 +15,7 @@ public class Rectangle implements Shape {
     }
 
     @Override
-    public double AreaOfFigure() {
+    public double figureSquare() {
         return getCircleSquare();
     }
 }

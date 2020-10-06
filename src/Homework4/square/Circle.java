@@ -14,7 +14,7 @@ public class Circle implements Shape {
 
 
     @Override
-    public double AreaOfFigure() {
+    public double figureSquare() {
         return getCircleSquare();
     }
 }

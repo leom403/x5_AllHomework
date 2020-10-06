@@ -8,7 +8,7 @@ public class Main {
         shape[1] = new Circle(2);
         shape[2] = new Rectangle(2, 4);
         for (Shape sh : shape) {
-            System.out.print("     " + sh.AreaOfFigure() + " | ");
+            System.out.print("     " + sh.figureSquare() + " | ");
         }
     }
 }
