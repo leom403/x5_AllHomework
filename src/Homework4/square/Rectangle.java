@@ -10,12 +10,8 @@ public class Rectangle implements Shape {
         this.b = height;
     }
 
-    public double getCircleSquare() {
-        return a * b;
-    }
-
     @Override
     public double figureSquare() {
-        return getCircleSquare();
+        return a * b;
     }
 }

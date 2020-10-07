@@ -10,12 +10,8 @@ public class Triangle implements Shape {
         this.h = theHeightOfTheTriangle;
     }
 
-    public double getCircleSquare() {
-        return (b / 2) * h;
-    }
-
     @Override
     public double figureSquare() {
-        return getCircleSquare();
+        return (b / 2) * h;
     }
 }

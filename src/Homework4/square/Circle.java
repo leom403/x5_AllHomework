@@ -8,13 +8,8 @@ public class Circle implements Shape {
         this.radius = radius;
     }
 
-    public double getCircleSquare() {
-        return Math.PI * radius * radius;
-    }
-
-
     @Override
     public double figureSquare() {
-        return getCircleSquare();
+        return Math.PI * radius * radius;
     }
 }
